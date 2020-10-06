@@ -1,0 +1,40 @@
+@mixin tablet {
+    @media only screen and(min-width: 768px) and (max-width: 1024px) {
+        @content;
+    }
+}
+
+
+@mixin desktop {
+    @media only screen and(min-width: 1024px) {
+        @content;
+    }
+}
+
+// typograthy
+
+@mixin t-big {
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.35em;
+    @include desktop {
+        font-size: 48px;
+    }
+}
+
+@mixin t-content-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 64px;
+    @include desktop {
+        font-size: 56px;
+    }
+}
+
+@mixin t-content {
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.88em;
+}

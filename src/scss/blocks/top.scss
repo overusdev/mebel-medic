@@ -1,0 +1,16 @@
+.top {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        height: 90px;
+        background: #ccc;
+    }
+
+    &__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 12px;
+    }
+}
