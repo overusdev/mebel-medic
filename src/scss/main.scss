@@ -41,11 +41,22 @@
     }
 
     &__content-item {
-        height: 150px;
+        min-height: 150px;
         background: #eee;
         margin-bottom: 24px;
         padding: 12px;
     }
+
+    &__content-item-header {
+        display: inline-block;
+        margin-bottom: 12px;
+        @include t-item-title;
+    }
+
+    &__content-item-img {
+        margin-bottom: 12px;
+    }
+    &__content-item-link {}
 
     &__aside-list {
         height: 450px;
@@ -60,9 +71,16 @@
     &__aside-link {
         display: flex;
         color: #fff;
-        padding: 12px 0;
+        padding: 10px 0;
 
         @include desktop {
+
+            &_state {
+                &_active {
+                    font-weight: bold;
+                }
+            }
+
             &:hover {
                 padding-left: 6px;
                 color: #000;
