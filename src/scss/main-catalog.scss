@@ -1,0 +1,127 @@
+.main-catalog {
+    &__form {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &__input {
+        border: 1px solid $border;
+        padding: 12px;
+
+        &:focus {
+            border: 1px solid $border;
+            outline: none;
+        }
+
+        &:focus::placeholder{
+            opacity: 0;
+        }
+    }
+
+    &__button {
+        border: 1px solid $green;
+        margin-left: 6px;
+        padding: 13px;
+        background: $green;
+        color: #fff;
+    }
+
+    &__g-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        background: #eee;
+    }
+
+    &__content {
+        margin-top: 24px;
+    }
+
+    &__content-item {
+        min-height: 150px;
+        background: #eee;
+        margin-bottom: 24px;
+        padding: 12px;
+    }
+
+    &__content-item-header {
+        display: inline-block;
+        margin-bottom: 12px;
+        @include t-item-title;
+    }
+
+    &__tree {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__tree-title {
+        color: $green;
+    }
+
+    &__tree-link {
+        font-weight: bold;
+        color: $green;
+    }
+
+    &__tree-list-item {
+        margin-bottom: 12px;
+    }
+
+    &__tree-sublist {
+        display: none;
+        padding: 24px;
+        &_state {
+            &_active {
+                display: block;
+            }
+        }
+    }
+
+    &__tree-sublist-item {
+        margin-left: 24px;
+        margin-bottom: 12px;
+    }
+
+    &__content-item-img {
+        margin-bottom: 12px;
+        padding: 8px 0;
+    }
+    &__content-item-link {}
+
+    &__aside-list {
+        height: 450px;
+        padding: 22px;
+        background: $green;
+    }
+
+    &__aside-list-item {
+        
+    }
+
+    &__aside-link {
+        display: flex;
+        color: #fff;
+        padding: 10px 0;
+
+        @include desktop {
+
+            &_state {
+                &_active {
+                    font-weight: bold;
+                }
+            }
+
+            &:hover {
+                padding-left: 6px;
+                color: #000;
+                background: #fff;
+                text-decoration: none;
+                transition: $transition;
+            }
+        }
+    }
+}
