@@ -81,13 +81,6 @@
         }
     }
 
-    &__content-item {
-        min-height: 150px;
-        background: #eee;
-        margin-bottom: 24px;
-        padding: 12px;
-    }
-
     &__content-item-header {
         display: inline-block;
         margin-bottom: 12px;
@@ -130,6 +123,7 @@
     &__content-item-img {
         margin-bottom: 12px;
         padding: 8px 0;
+        width: 100%;
         height: 100px !important;
 
         @include desktop {
