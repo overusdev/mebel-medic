@@ -1,15 +1,24 @@
 <div class="main-catalog">
     <div class="container">
-        <div class="col-md-8">
-            <form action="" class="main-catalog__form">
-                <input type="text" class="main-catalog__input" placeholder="Поиск по каталогу">
-                <button type="submit" class="main-catalog__button">Найти</button>
-            </form>
+        <div class="row">
+            <div class="col-md-8">
+                <form action="" class="main-catalog__form">
+                    <input type="text" class="main-catalog__input" placeholder="Поиск по каталогу">
+                    <button type="submit" class="main-catalog__button">Найти</button>
+                </form>
+                <div class="main-catalog__form-result">
+                    <span class="main-catalog__form-close-icon">X</span>
+                    ... query result
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-md-8">
-                <div class="main-catalog__g-banner">Banner...</div>
                 <div class="main-catalog__content">
+                    <div class="main__meta-decription">
+                        <h1>Каталог медицинского оборудования</h1>
+                    </div>
+                    <div class="main-catalog__g-banner">Banner...</div>
                     <div class="main-catalog__tree">
                         <h2 class="main-catalog__tree-title">А</h2>
                         <ul class="main-catalog__tree-list">
@@ -42,8 +51,10 @@
             </div>
             <div class="col-md-4">
                 <ul class="main-catalog__aside-list">
-                    <li class="main-catalog__aside-list-item"><a href="index.html" class="main-catalog__aside-link">Медицинская мебель</a></li>
-                    <li class="main-catalog__aside-list-item"><a href="catalog.html" class="main-catalog__aside-link main-catalog__aside-link_state_active">Каталог</a></li>
+                    <li class="main-catalog__aside-list-item"><a href="index.html"
+                            class="main-catalog__aside-link">Медицинская мебель</a></li>
+                    <li class="main-catalog__aside-list-item"><a href="catalog.html"
+                            class="main-catalog__aside-link main-catalog__aside-link_state_active">Каталог</a></li>
                 </ul>
             </div>
         </div>
