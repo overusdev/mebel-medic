@@ -72,11 +72,11 @@
     }
 
     &__tree-sublist {
-        display: none;
+        // display: none;
         padding: 24px;
         &_state {
             &_active {
-                display: block;
+                display: block !important;
             }
         }
     }
