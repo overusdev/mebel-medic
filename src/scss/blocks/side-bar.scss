@@ -1,0 +1,32 @@
+.side-bar {
+    height: 450px;
+    padding: 22px;
+    background: $green;
+    
+    &__list-item {
+        
+    }
+    
+    &__link {
+        display: flex;
+        color: #fff;
+        padding: 10px 0;
+    
+        @include desktop {
+    
+            &_state {
+                &_active {
+                    font-weight: bold;
+                }
+            }
+    
+            &:hover {
+                padding-left: 6px;
+                color: #000;
+                background: #fff;
+                text-decoration: none;
+                transition: $transition;
+            }
+        }
+    }
+}

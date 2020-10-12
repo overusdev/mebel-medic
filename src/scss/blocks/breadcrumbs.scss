@@ -1,0 +1,20 @@
+.breadcrumbs {
+    padding: 8px 0;
+    display: flex;
+
+    &__item {
+        position: relative;
+        margin-right: 8px;  
+    }
+
+    &__item:not(:first-child) {
+        padding-left: 13px;
+        &:before {
+            position: absolute;
+            content: '>';
+            left: 0;
+            top: 1px;
+        }
+    }
+
+}

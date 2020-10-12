@@ -4,9 +4,10 @@ $(function () {
 
     const $listItem         = $('.main-catalog__tree-list-item');
     const $sublistItem      = $('.main-catalog__tree-sublist');
-    const $searchInput      = $('.main-catalog__form');
-    const $searchFormResult = $('.main-catalog__form-result');
-    const $searchCloseIcon  = $('.main-catalog__form-close-icon');
+    const $searchInput      = $('.search-form');
+    const $searchFormResult = $('.search-form__result');
+    const $searchFormActive = 'search-form__result_state_active';
+    const $searchCloseIcon  = $('.search-form__close-icon');
 
 
     $sublistItem.hide();
@@ -22,11 +23,11 @@ $(function () {
     $searchInput.on( 'click', function() {
         $( this )
             .next($searchFormResult)
-            .toggleClass('main-catalog__form-result_state_active');
+            .toggleClass( $searchFormActive );
     } );
 
     $searchCloseIcon.on( 'click', function() {
-        $searchFormResult.removeClass('main-catalog__form-result_state_active');
+        $searchFormResult.removeClass( $searchFormActive );
     } );
 
     
