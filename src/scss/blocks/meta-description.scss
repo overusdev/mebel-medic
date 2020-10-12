@@ -1,0 +1,13 @@
+.meta-decription {
+    margin-bottom: 24px;
+    width: 100%;
+
+    @include desktop {
+        width: 80%;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 28px;
+    }
+}

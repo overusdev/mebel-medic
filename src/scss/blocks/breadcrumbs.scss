@@ -1,10 +1,19 @@
 .breadcrumbs {
-    padding: 8px 0;
+    padding: 12px 0;
     display: flex;
+    flex-direction: column;
+
+    @include desktop {
+        flex-direction: row;
+    }
 
     &__item {
         position: relative;
         margin-right: 8px;  
+        margin-bottom: 6px;
+        @include desktop {
+            margin-bottom: 0;
+        }
     }
 
     &__item:not(:first-child) {
