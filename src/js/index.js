@@ -13,7 +13,7 @@ $(function () {
     $sublistItem.hide();
 
     $listItem.on( 'click', function(event) {
-        event.preventDefault();
+        // event.preventDefault();
         $( this )
             .children('.main-catalog__tree-sublist')
             .toggleClass('main-catalog__tree-sublist_state_active');

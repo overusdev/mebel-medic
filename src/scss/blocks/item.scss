@@ -1,0 +1,43 @@
+.item {
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    margin-bottom: 24px;
+    padding: 12px;
+
+    @include tablet {
+        height: 300px;
+    }
+
+    @include desktop {
+        height: 330px;
+    }
+
+
+    &__header {
+        display: inline-block;
+        margin-bottom: 12px;
+        font-size: 14px;
+        font-weight: bold;
+        @include desktop {
+            font-size: 17px;
+        }
+    }
+
+    &__img {
+        margin-bottom: 12px;
+        padding: 8px 0;
+        height: 150px;
+        width: 100%;
+        @include desktop {
+            height: auto;
+        }
+    }
+    &__link {
+        position: absolute;
+        bottom: 12px;
+    }
+}
