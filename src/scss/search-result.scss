@@ -1,0 +1,38 @@
+.search-result {
+
+    &__content {
+        margin-top: 24px;
+    }
+
+    &__content-item-header {
+        display: inline-block;
+        margin-bottom: 12px;
+        @include t-item-title;
+    }
+
+    &__item-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+
+    &__item {
+        position: relative;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        background: #eee;
+        margin-bottom: 8px;
+    }
+
+    &__img {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    &__brand {
+        position: absolute;
+        right: 8px;
+    }
+
+}

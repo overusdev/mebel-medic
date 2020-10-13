@@ -1,0 +1,7 @@
+.g-row {
+    display: flex;
+
+    &__column {
+        flex-direction: column;
+    }
+}
