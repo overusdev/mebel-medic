@@ -9,17 +9,17 @@ var data = {
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="shortcut icon" href="favicon/favicon.ico">
-    <link rel="stylesheet" href="css/style.bundle.css" />
-    <title>Каталог</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <link rel="stylesheet" href="css/style.bundle.css" />
+  <title>Бренды</title>
 </head>
 
 <body>
-    <%= _.template(require('./../includes/blocks/top.html').default)(data) %>
-    <%= _.template(require('./../includes/brands.html').default)(data) %>
-    <%= _.template(require('./../includes/scripts.html').default)(data) %>
+  <%= _.template(require('./../includes/blocks/top.html').default)(data) %>
+  <%= _.template(require('./../includes/brands.html').default)(data) %>
+  <%= _.template(require('./../includes/scripts.html').default)(data) %>
 </body>
 
 </html>
