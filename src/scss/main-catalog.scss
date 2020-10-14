@@ -22,12 +22,6 @@
         }
     }
 
-    &__content-item-header {
-        display: inline-block;
-        margin-bottom: 12px;
-        @include t-item-title;
-    }
-
     &__tree {
         display: flex;
         flex-direction: column;

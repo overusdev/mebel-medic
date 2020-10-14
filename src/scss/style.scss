@@ -20,3 +20,7 @@
 @import 'product';
 @import 'brand';
 @import 'search-result';
+
+a:hover {
+    text-decoration: none !important;
+}

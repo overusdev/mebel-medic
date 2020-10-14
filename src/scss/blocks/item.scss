@@ -4,20 +4,21 @@
     height: 280px;
     display: flex;
     flex-direction: column;
-    background: #eee;
     margin-bottom: 24px;
     padding: 12px;
+    border: 1px solid #ccc;
 
     @include tablet {
         height: 300px;
     }
 
     @include desktop {
-        height: 330px;
+        height: 305px;
     }
 
 
     &__header {
+        color: $header_color;
         display: inline-block;
         margin-bottom: 12px;
         font-size: 14px;
@@ -39,5 +40,6 @@
     &__link {
         position: absolute;
         bottom: 12px;
+        font-size: 14px;
     }
 }

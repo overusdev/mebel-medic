@@ -4,12 +4,6 @@
         margin-top: 24px;
     }
 
-    &__content-item-header {
-        display: inline-block;
-        margin-bottom: 12px;
-        @include t-item-title;
-    }
-
     &__item-wrapper {
         display: flex;
         flex-direction: column;
