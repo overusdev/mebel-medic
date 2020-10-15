@@ -25,15 +25,24 @@
     &__tree {
         display: flex;
         flex-direction: column;
+        margin-bottom: 24px;
+
+        @include desktop {
+            border: 1px solid #ccc;
+            padding: 24px;
+        }
     }
 
     &__tree-title {
-        color: $green;
+        color: $title_color;
     }
 
     &__tree-link {
         font-weight: bold;
-        color: $green;
+        color: $blue;
+        @include desktop {
+            cursor: pointer;
+        }
     }
 
     &__tree-list-item {
@@ -41,8 +50,7 @@
     }
 
     &__tree-sublist {
-        // display: none;
-        padding: 24px;
+        padding: 24px 18px;
         &_state {
             &_active {
                 display: block !important;
@@ -51,8 +59,10 @@
     }
 
     &__tree-sublist-item {
-        margin-left: 24px;
         margin-bottom: 12px;
+        a {
+            color: $color;
+        }
     }
 
     &__content-item-img {

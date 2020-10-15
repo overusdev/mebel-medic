@@ -53,6 +53,9 @@
         position: absolute;
         right: 12px;
         top: 12px;
+        height: 20px;
+        width: 20px;
         cursor: pointer;
+        background: url('../img/search-form__close-icon.svg') no-repeat center;
     }
 }
